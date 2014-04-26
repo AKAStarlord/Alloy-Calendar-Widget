@@ -48,6 +48,7 @@ var numberOfDaysInANextMonth = _getNumberOfDaysInMonth({
  * Now create the variables that can be used in the Alloy Controller to get the year date and month
  */
 
+//The variables that can be used to get the values of month date and year in alloy controllers.
 $.selectedDate = currentDate;
 $.selectedMonth = currentMonth;
 $.selectedYear = currentYear;
