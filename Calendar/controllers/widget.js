@@ -281,6 +281,7 @@ $.yearNameLabel.text = new Date().getFullYear();
 function _makeDaysView(args) {
 	var lastSelectedDate = undefined;
 	var previousMonthDatesEnd = args.numberOfDaysInAPreviousMonth - (args.day_of_week_for_first_date - 1);
+	previousMonthDatesEnd = Math.floor(previousMonthDatesEnd);
 	Ti.API.info(previousMonthDatesEnd);
 	var firstDayOftheWeek = args.day_of_week_for_first_date;
 	var nextMonthDatesStart = 1;
